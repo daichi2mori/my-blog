@@ -1,19 +1,9 @@
 ---
-const pageTitle = 'Astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pageTitle = 'Foreth BLOG';
 ---
 
-<html lang="ja">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<a href="/about/">概要</a>
-		<a href="/blog/">ブログ</a>
-
-		<h1 class="text-3xl font-bold underline">私のAstro</h1>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<h2>Index.astro</h2>
+</BaseLayout>
